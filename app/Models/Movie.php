@@ -24,4 +24,12 @@ class Movie extends Model
     {
         return $this->belongsToMany(Person::class);
     }
+    public function movie_status()
+    {
+        return $this->belongsTo(Movie_status::class);
+    }
+    public function movie_type()
+    {
+        return $this->belongsTo(Movie_type::class);
+    }
 }
